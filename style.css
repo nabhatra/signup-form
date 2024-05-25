@@ -1,0 +1,125 @@
+/* css reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #596D48;
+}
+
+body {
+  display: flex;
+  font-family: Garamond, system-ui;
+  --font-weight: 550;
+  --padding-left: 1.3rem;
+}
+html {
+  font-size: clamp(1rem, 0.2rem + 1vw, 1.3rem);
+  line-height: 1.25rem;
+}
+
+aside {
+  height: 100vh;
+  width: 30vw;
+  border: 1px solid grey;
+  position: relative;
+}
+
+.image-text {
+width: 100%;
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-weight: bold;
+font-size: calc(6vw - 0.8rem);
+background-color: rgba(0, 0, 0, 0.4);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+input {
+  display: block;
+  font-family: inherit;
+  height: 25px;
+  font-size: 16px;
+  border: 2px solid #E5E7EB;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgba(0, 106, 255, 0.792);
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+label {
+  font-size: 10px;
+  font-weight: 550;
+}
+
+.flex {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+header {
+  padding: 0 var(--padding-left);
+  background-color: rgba(245, 255, 250, 0.7);
+  width: 70vw;
+}
+
+header > p:first-child {
+  max-width: 65ch;
+  padding: 5rem 0 1rem 0;
+  font-weight: var(--font-weight);
+}
+
+header > p:nth-child(2) {
+  padding-bottom: 2rem;
+  font-weight: var(--font-weight);
+  font-style: italic;
+}
+
+.user-input {
+  /* outline: 1px solid blue; */
+  padding: 0.5rem var(--padding-left);
+  padding-bottom: 0.5rem;
+  box-shadow: 0 1px 4px -1px rgba(128, 128, 128, 0.33), 0px 3px 4px -1px rgba(128, 128, 128, 0.33);
+}
+
+button {
+  display: block;
+  padding: 6px 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #596D48;
+  color: white;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.user-input > span:first-child {
+  font-weight: var(--font-weight);
+  font-size: 16px;
+}
+
+small {
+  font-size: 12px;
+  font-weight: var(--font-weight);
+}
+
+.end {
+  margin-top: 1.5rem;
+  padding-left: var(--padding-left);
+}

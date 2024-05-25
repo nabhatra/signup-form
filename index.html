@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <!-- Sidebar section -->
+    <aside>
+        <img src="./images/halie-west.jpg" height="100%" width="100%">
+        <div class="image-text"><img src="./images/odin-lined.png" height="20%" width="20%">ODIN</div>
+    </aside>
+
+    <!-- Main content section -->
+    <div class="content">
+        <!-- Header section with introductory text -->
+        <header>
+            <p>
+                This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams. Sign up now to get started.
+            </p>
+            <p>You know you want to.</p>
+        </header>
+
+        <!-- Form section -->
+        <div class="form">
+            <form action="#">
+                <!-- User input section with first and last name -->
+                <div class="user-input">
+                    <span>Let's do this!!</span>
+                    <div class="flex">
+                        <!-- First name input field -->
+                        <div>
+                            <label for="name">First Name</label>
+                            <input type="text" id="name">
+                        </div>
+                        <!-- Last name input field -->
+                        <div>
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <!-- Email input field -->
+                        <div>
+                            <label for="email">Email :</label>
+                            <input type="email" id="email">
+                        </div>
+                        <!-- Phone input field -->
+                        <div>
+                            <label for="phone">Phone :</label>
+                            <input type="tel" id="phone">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <!-- Password input field -->
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password">
+                            <small id="pass-check"></small>
+                        </div>
+                        <!-- Confirm password input field -->
+                        <div>
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit button and login link -->
+                <div class="end">
+                    <div class="button-container"></div>
+                    <button type="submit">Create Account</button>
+                    <small>Already have an account? <a href="#">Log in</a></small>
+                </div>
+                </div>
+            </form> <!-- Correctly closed form tag -->
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
